@@ -84,7 +84,7 @@ const showNotification = (message) => {
   notificationState.message = message;
   notificationState.isShow = true;
   setTimeout(() => {
-    notificationState.show = false;
+    notificationState.isShow = false;
   }, 2000);
 };
 provide("notificationState", notificationState);

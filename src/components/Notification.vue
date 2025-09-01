@@ -10,7 +10,7 @@
         <button
           type="button"
           class="btn-close btn-close-white me-2 m-auto"
-          @click="notificationState.isShow = false"
+          @click="closeToast"
         ></button>
       </div>
     </div>
@@ -20,4 +20,5 @@
 import { inject } from "vue";
 
 const notificationState = inject("notificationState");
+const closeToast = inject("closeToast");
 </script>
